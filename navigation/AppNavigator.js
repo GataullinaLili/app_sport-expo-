@@ -11,22 +11,17 @@ const Stack = createStackNavigator();
 
 export default function AppNavigator() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [loading, setLoading] = useState(true);
+const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    checkAuth();
-  }, []);
+useEffect(() => {
+  checkAuth();
+}, []);
 
-  const checkAuth = async () => {
-    try {
-      const token = await AsyncStorage.getItem('userToken');
-      setIsAuthenticated(!!token);
-    } catch (error) {
-      console.log('Ошибка при проверке токена:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
+const checkAuth = async () => {
+  const token = await getToken(); // из utils/auth.js
+  setIsAuthenticated(!!token);
+  setLoading(false);
+};
 
   const login = async (token) => {
     await AsyncStorage.setItem('userToken', token);
