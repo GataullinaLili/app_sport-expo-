@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Sport Lesson",
+    "slug": "app-sport-lesson",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1E90FF"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "assets/**/*"
+    ],
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1E90FF"
+      },
+      "package": "com.yourname.sportlesson"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundleIdentifier": "com.yourname.sportlesson",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id-here"
+      }
+    }
+  }
+}
