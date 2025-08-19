@@ -24,20 +24,10 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#1E90FF"
-      },
-      "package": "com.yourname.sportlesson"
+      }
     },
     "web": {
-      "favicon": "./assets/favicon.png",
-      "bundleIdentifier": "com.yourname.sportlesson",
-      "config": {
-        "usesNonExemptEncryption": false
-      }
-    },
-    "extra": {
-      "eas": {
-        "projectId": "your-project-id-here"
-      }
+      "favicon": "./assets/favicon.png"
     }
   }
 }
